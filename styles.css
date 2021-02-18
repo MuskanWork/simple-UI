@@ -1,0 +1,31 @@
+.logo{
+    margin-left: 700px;
+}
+
+.home{
+    text-align: left;
+}
+.offers{
+    text-align: left;
+    
+}
+.menu{
+    text-align: left;
+}
+li{
+    display:inline-flex; 
+    justify-content: space-between;  
+    margin-left: 40px; 
+}
+.container{
+    background-color: rgba(44, 71, 224, 0.637);
+    color: whitesmoke;
+}
+#dis{
+    display: none;
+    padding-left: 60px;
+    padding-right: 800px;
+    background-color: rgb(111, 177, 231);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
