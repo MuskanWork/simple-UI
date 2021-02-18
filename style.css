@@ -1,0 +1,87 @@
+nav{
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+a:hover{
+    color: yellow;
+}
+.logo{
+    float: left;
+}
+a{
+    display: inline-block;
+    padding:10px;
+    font-size:20px;
+    font-family:raleway;
+    text-decoration: none;
+    color: whitesmoke;
+} 
+
+header{
+    background-color:rgb(76, 80, 83);
+    height: 80px;
+}
+footer{
+   
+    bottom: 0px;
+    background-color:rgb(103, 108, 112);
+    font-family:raleway;
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+table{
+     text-align: center; 
+     justify-content: center; 
+}
+ .ftr, .ftd , .fth{
+     width: 423px;
+ }
+ .last{
+     padding-top: 30px;
+     font-family: 'Times New Roman', Times, serif;
+     padding-left: 20px;
+ }
+ #btn{
+    margin-left: 100px;
+    
+ }
+ .row{
+     display: inline-flex;
+     margin-left: 70px;
+    text-align: center;
+     justify-content: center;
+     font-weight: bold;
+     
+ }
+ .column{
+     /* font: bold; */
+     text-align: center;
+     padding: 10px;
+     
+ }
+ .cls{
+     padding-top: 113px;
+     font-family: URW Chancery L, cursive;
+     font-size: larger;
+    background-color: rgb(226, 230, 177);
+    padding-bottom: 108px;
+ }
+ .card{
+     background-color: rgb(161, 228, 181);
+ }
+ .data{
+    text-align: left; 
+     
+    margin-left: 500px;
+ }
+ .res{
+     float: left;
+ }
+ .rowf{
+     margin-top: 10px;
+ }
+ .bttn{
+     display: inline;
+ }

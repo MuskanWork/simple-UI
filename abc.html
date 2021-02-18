@@ -1,0 +1,53 @@
+<div class="mid">
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="img" src="./five.jpeg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="img" src="./six.jpeg">
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="img" src="./third.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+.column{
+    display: inline;
+    float: left;
+    padding-left: 30px;
+}
+.card{
+    display: inline; 
+}
+.img{
+    width: 150%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 50px  50px;
+    grid-template-rows: 50px 50px;
+
+    <script type="text/javascript">
+        function result(){
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+        
+        document.write(name +"<br/>");
+        document.write(email +"<br/>");
+        }
+       
+       </script>
+       <h1>Veeren</h1>
+       <form onsubmit="return result();" method="post" action="veeren@site.com">
+       <input type="text" SIZE="20" name="name" id="name">
+       
+       <input type="text" size="30" name="email" id="email">
+       
+       <input id="submit" type="submit" value="sned form data" />
+       
+       </form>

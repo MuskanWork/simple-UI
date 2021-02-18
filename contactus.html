@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var result = strText + ' ' + strText1;
+            document.getElementById('spanResult').textContent = result;
+            
+        }
+    </script>
+</head>
+<body>
+   <header>
+        <div class="container"> 
+            <div class="logo">
+              <a href="./index.html">  <img src="index.png" height="60px" width="60px"></a>
+            </div>
+            <nav>
+                <a  href="./index.html">Home</a>
+                <a  href="./contactus.html">Contact Us</a>
+                <tr>
+            </nav>
+        </div>
+    </header>
+    
+    <form style="background-color: bisque;" name="myform">
+        <h1 style="text-align: center;"> CONTACT US</h1>
+        <div class="data"> 
+            <div class="rowf">
+                <span><label for="name">NAME :</label></span>
+                <span><input type="text" name="name" width="20px" id="user_input1" required></span>
+            </div>
+            <div class="rowf">
+                <span><label for="email">EMAIL :</label></span>
+                <span><input type="email" name="email" width="20px" id="user_input2" required></span>
+            </div>
+            <div class="rowf">
+                <span><label for="contact">Contact:</label></span>
+                <span><input type="number" name="contact" width="20px" id="user_input3" required></span>
+            </div>
+            <div class="rowf">
+                <span><label for="password">Password:</label></span>
+                <span><input type="password" name="password" width="16px" id="user_input4" required></span>
+            </div>
+            <div class="rowf">
+                <span><label for="gender" name="gender">Gender :</label></span>
+                <span><input type="radio" name="gender" width="20px" id="user_input5" value="male">Male 
+                <input type="radio" name="gender" width="20px" id="user_input6" value="female">Female</span>
+            </div>
+            <br>
+            <div class="rowf">
+                <span><button id="btn" type="submit" onclick="validation(),showInput()">Submit</button></span> 
+            </div>
+        </div>    
+        <label>Your Details </label>
+    
+      Name:  <p id='display1'></p>
+      Email:  <p id='display2'></p>
+      contact:  <p id='display3'></p>
+      Gender:  <p id='display4'></p>
+       
+    </form> 
+    
+    <script language="JavaScript">
+
+        function validation(){
+            var name = document.forms["myform"]["name"].value;
+            var email = document.forms["myform"]["email"].value;
+            var contact = document.forms["myform"]["contact"].value;
+            var password = document.forms["myform"]["password"].value;
+            var gender = document.forms["myform"]["gender"];
+           
+            if(name == "")
+            {
+                alert('name must be filled')
+            }
+            else if(email == "") 
+            {
+                alert('email must be filled')
+                var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if(email.value.match(mailformat))
+                {
+                    alert('invalid email');
+                }
+            }
+            else if(contact == "")
+            {
+                alert('contact must be filled');
+                var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;;
+                if(contact.value.match(phoneno))
+                {
+                    alert('invalid input');
+                }
+            }
+            else if(password = ""){
+                alert('password must be filled');
+            }
+            else if(gender.checked==false)
+            {
+                alert('you must select the one gender');
+            }
+           return false;
+        }
+
+        function showInput() {
+            event.preventDefault();
+            var strText1 = document.getElementById("user_input1").value;
+            document.getElementById('display1').textContent = strText1;
+            
+            var strText2 = document.getElementById("user_input2").value;   
+            document.getElementById('display2').textContent = strText2;
+            
+            var strText3= document.getElementById("user_input3").value;
+            document.getElementById('display3').textContent = strText3;  
+
+            var strText5 = document.getElementById("user_input5").checked;
+            var strText6 = document.getElementById("user_input6").checked;
+            var gender="";         
+            if(strText5 == true)
+            {  
+                gender+="male";
+            }
+            else if(strText6 == true){   
+                gender+="female";
+            }
+            document.getElementById('display4').textContent = gender;
+            // document.write(strText1);    
+             //var Result = "Name"+ strText1 +" "+ "Email" + strText2 +" "+ "Contact"+ strText3 +" "+ "Gender" + strText5 + strText6;  
+            
+        }
+      </script>
+      <br><br>
+    <footer>
+        <p style="padding-left: 10px;"><b>For more Deatails</b></p>
+    <div class="contains">
+        <table>
+            <tr class="ftr">
+                <th class="fth">About us</th>
+                <th class="fth">Customer Service</th>
+                <th class="fth">Quick Links</th>
+            </tr>
+            <tr class="ftr">
+                <td class="ftd">Our Heritage</td>
+                <td class="ftd">Frequently Asked Questions</td>
+                <td class="ftd">Frequently Asked Questions</td>
+            </tr>
+            <tr class="ftr">
+                <td class="ftd">Our Company</td>
+            </tr>
+        </table>   
+    </div>    
+<div class="last">
+    Web Accessiblity |Privacy Statement | Terms of Use | Site Map |Contact Us | Cookie Preferences<br>
+    For more details :- <a href="https://www.starbucks.com/">starbucks.com</a>
+  <center> © 2019 Starbucks Coffee Company. All rights reserved.</center> 
+</div>
+
+    </footer>
+</body>
+</html>
+
