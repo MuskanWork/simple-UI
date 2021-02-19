@@ -37,16 +37,57 @@
         </ul>  
     </div>
 </nav>
-<p id="dis">Domino's is the largest pizza restaurant chain in the world based on global retail sales, with more than 17,200 stores in over 90 markets. Founded in 1960, our roots are in convenient pizza delivery, while a significant amount of our sales also come from carryout customers.></p>
+<p id="dis">Domino's is the largest pizza restaurant chain in the world based on global retail sales, with more than 17,200 stores in over 90 markets. Founded in 1960, our roots are in convenient pizza delivery, while a significant amount of our sales also come from carryout customers.</p>
 </header>
 <body>
+   <table id="offer">
+        <tr class="a1">
+            <th>Order</th>
+            <th>Small</th>
+            <th>Large</th>
+            <th>discount</th>
+        </tr>
+        <tr class="a2">
+            <td>Capsicum</td>
+            <td>99</td>
+            <td>199</td>
+            <td>10%</td>
+        </tr>
+        <tr class="a3"> 
+            <td>corn</td>
+            <td>119</td>
+            <td>219</td>
+            <td>12%</td>
+        </tr>
+        <tr class="a2">
+            <td>vegitable overload</td>
+            <td>169</td>
+            <td>269</td>
+            <td>15%</td>
+        </tr>
+        <tr class="a3">
+            <td>onion</td>
+            <td>89</td>
+            <td>189</td>
+            <td>20%</td>
+        </tr>
+   </table>
     <script>
         $(document).ready(function(){
              $(".menu").click(function(){
-                $('#dis').slideToggle();
+                $('#dis').animate({ height : 'toggle',
+            opacity : '0.8'}, 'slow');
                     
             });
          });
+
+         $(document).ready(function(){
+             $(".offers").click(function(){
+                $('#offer').slideToggle();
+                    
+            });
+         });
+         
     </script>
 </body>
 </html>

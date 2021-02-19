@@ -23,9 +23,31 @@ li{
 }
 #dis{
     display: none;
-    padding-left: 60px;
-    padding-right: 800px;
     background-color: rgb(111, 177, 231);
     font-family: 'Times New Roman', Times, serif;
+    margin-right: 700px;
+    margin-left: 100px;
+    text-align: justify;
+}
+.a1{
+    background-color: rgb(14, 14, 182);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.a2{
+    background-color: rgb(15, 180, 192);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.a3{
+    background-color: rgb(54, 164, 228);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#offer{
+    display: none;
+    max-width:1600px;
+     min-width:900px;
+     max-height:600px; min-height:200px;
     text-align: center;
 }
